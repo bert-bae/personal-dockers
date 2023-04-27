@@ -1,0 +1,10 @@
+version: "3"
+services:
+  database:
+    image: postgis/postgis:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: local
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: takeandride
